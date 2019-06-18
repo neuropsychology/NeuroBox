@@ -4,7 +4,7 @@ One of most common hair-pulling issue that psychologists or neuroscientists are 
 
 **NeuroBox is the remedy.**
 
-NeuroBox aims to help you sending triggers (event markers) from your experiment to other systems. It relies on the most accurate technique, a **photosensor**, which will react to the **stimulus' physical display *on the screen*** and send this information to your recording device.
+NeuroBox aims to help you send triggers (event markers) from your experiment to other systems. It relies on the most accurate technique, a **photosensor**, which will react to the **stimulus' physical display *on the screen*** and send this information to your recording device.
 
 **This is a new and work in progress project. If you are interested by helping or using it, do not hesitate do let us know by opening an issue.**
 
