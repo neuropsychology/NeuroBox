@@ -5,7 +5,7 @@ def main():
     """Monitor the serial port (which should connect to the Arduino)."""
     with serial.Serial('/dev/ttyACM0', 9600) as port:
         while port.is_open:
-            x = port.readline().decode('utf-8')
+            x = port.readline()
             print(x)
 
 if __name__ == '__main__':

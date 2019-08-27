@@ -12,8 +12,9 @@ RBD::Timer timer;
 void setup() {
   // initialize serial communication at 9600 bits per second:
   Serial.begin(9600);
-  pinMode(2, OUTPUT);    // sets the digital pin 13 as output
-  timer.setTimeout(10);
+  pinMode(2, OUTPUT);
+  pinMode(13, OUTPUT);
+  timer.setTimeout(100);
   timer.restart();
 }
 
@@ -26,11 +27,14 @@ void loop() {
     /* Serial.println("Analog read: "); */
     /* Serial.println(sensorValue); */
     
-    if (sensorValue < 200) {
+    if (sensorValue < 100) {
       digitalWrite(2, LOW);
+      digitalWrite(13, HIGH);
     }
     else {
       digitalWrite(2, HIGH);
+      /* digitalWrite(13, HIGH); */
+      digitalWrite(13, LOW);
     }
   }	
 }
